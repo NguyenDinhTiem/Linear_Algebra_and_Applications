@@ -61,7 +61,7 @@ plt.show()
 
  -  Nội suy có thể hiểu là suy ra từ những dữ liệu đã có rời rạc, nó giúp giải quyết những bài toán dự đoán...bạn có thể nhớ đến bài toán dự đoán giá nhà.
   Một số phương pháp nội suy:
-  ![img1.png](https://github.com/NguyenDinhTiem/Linear_Algebra_and_Applications/edit/main/noisuy.png)
+  ![img1.png](https://github.com/NguyenDinhTiem/Linear_Algebra_and_Applications/blob/main/noisuy.png)
 
 -  Một ứng dụng rất phổ biến của nội suy là phóng to ảnh, tìm các giá trị mới ở ảnh phóng to từ ảnh gốc
 
@@ -100,29 +100,29 @@ cv2.imwrite('resize_bilinear.png',resize_bilinear)
 
 # 3. Vector and Matrix
 - Vector and Matrix là thứ rất quan trọng trong xử lí ảnh, khai phá dữ liệu... sau đây là một số công thức phép tính đơn giản cuản matran va vecto, bạn có thể đọc nhiều hơn tại: https://aivietnam.ai/courses/aisummer2019/lessons/dai-so-tuyen-tinh-co-ban/
- ![img1.png](https://github.com/NguyenDinhTiem/Linear_Algebra_and_Applications/edit/main/vectomatrix.png)
+ ![img1.png](https://github.com/NguyenDinhTiem/Linear_Algebra_and_Applications/blob/main/vectomatrix.png)
 - Code cộng hai vecto
 - Nhân hai ma trận
 - Matrix nhân vecto, ứng dụng xoay ảnh
- ![img1.png](https://github.com/NguyenDinhTiem/Linear_Algebra_and_Applications/edit/main/matrannhanvecto.png)
- ![img1.png](https://github.com/NguyenDinhTiem/Linear_Algebra_and_Applications/edit/main/matrix1.png)
-![img1.png](https://github.com/NguyenDinhTiem/Linear_Algebra_and_Applications/edit/main/matrix2.png)
+ ![img1.png](https://github.com/NguyenDinhTiem/Linear_Algebra_and_Applications/blob/main/matrannhanvecto.png)
+ ![img1.png](https://github.com/NguyenDinhTiem/Linear_Algebra_and_Applications/blob/main/matrix1.png)
+![img1.png](https://github.com/NguyenDinhTiem/Linear_Algebra_and_Applications/blob/main/matrix2.png)
  
 # 4. Cosine Similarity
 - Cosine similarity (cs) được dùng để đo mức độ giống nhau/tương đồng giữa hai vector, nó được sử dụng trong nhiều bài toán gợi ý.........
-[!img1](https://github.com/NguyenDinhTiem/Linear_Algebra_and_Applications/edit/main/cosin.png)
+[!img1](https://github.com/NguyenDinhTiem/Linear_Algebra_and_Applications/blob/main/cosin.png)
 - Stereo matching
 Stereo matching là một lĩnh vực nghiên cứu trong computer vision, nhằm tính khoảng cách từ camera đến các object. Stereo matching dùng hệ thống gồm 2 camera (gọi là stereo camera) để bắt trước cặp mắt của con người trong việc tính khoảng cách.
 
 - Thông tin về chiều sâu (hay khoảng cách tới các object) được ứng dụng rộng rãi trong xây dựng mô hình 3D, xe tự hành, và cho cả các ứng dụng khác trong computer visioin như tracking, detection, hay segmentation.
-![img1.png](https://github.com/NguyenDinhTiem/Linear_Algebra_and_Applications/edit/main/stereo.png)
+![img1.png](https://github.com/NguyenDinhTiem/Linear_Algebra_and_Applications/blob/main/stereo.png)
 
 - Ngắn gọn thì nó bao gồm việc nhìn vào cùng một bức tranh từ hai góc độ khác nhau, tìm kiếm cùng một thứ trong cả hai bức tranh và suy ra chiều sâu từ sự khác biệt về vị trí. Cái này được gọi là stereo matching.
 
 - Phát biểu bài toán: cho 2 ảnh trái và ảnh phải, với mỗi pixel p bên ảnh trái, tìm pixel tương ứng q bên ảnh phải. Biết rằng tọa độ dòng của 2 pixel bằng nhau (yp=yq) và tọa độ cột của q lệch trái tối đa là D (xq=xp–d với d∈[0,D]). Hình sau minh họa hai pixel tương ứng giữa cặp ảnh trái và phải.
-![img1.png](https://github.com/NguyenDinhTiem/Linear_Algebra_and_Applications/edit/main/stereo1.png)
+![img1.png](https://github.com/NguyenDinhTiem/Linear_Algebra_and_Applications/blob/main/stereo1.png)
 - Phương pháp dựa vào pixel
-![img1.png](https://github.com/NguyenDinhTiem/Linear_Algebra_and_Applications/edit/main/stereo2.png)
+![img1.png](https://github.com/NguyenDinhTiem/Linear_Algebra_and_Applications/blob/main/stereo2.png)
 Theo ý hiểu của mình thì phương pháp này như sau:
 Bước 1: Chọn 1 điểm trên ảnh trái L giả sử là A(23, 10) giá trị điểm này là 100, giờ bên ảnh phải mình cũng lấy 1 điểm B(23,10) giá trị điểm này là 110. Mặc dù 2 điểm cùng tọa độ, nhưng giá trị lại khác nhau, vì sao lại như vậy? Là do 2 hình nhìn như gống nhau nhưng do nhiều yếu tố như góc chụp, độ sáng.. nên có sự chênh lệch giá trị màu như vậy. Giả sử người ta tính toán và nói rằng mình cần dịch chuyển điểm B về bên trái khoảng (0-15 ô hay giá trị toạn độ theo x) thì sẽ tìm được đúng điểm đúng với điểm A ở bên trái. 
 Bước 2: Tiếp theo mình mình dịch chuyển xB sang trái từ 1->15 đơn vị, mỗi lần dịch chuyển ta được 1 vị trí xB mới, mỗi xB có 1 giá trị màu khác nhau. Sau đó ta tính độ lệch tại 15 giá trị đó bằng cách lấy giá trị màu tại A - đi giá trị tại từng điểm vị trí xB lấy bình phương. Ta lấy arg min độ lệch của 15 vị trí ta tính bên trên, nếu vị trí nào mà có giá trị làm cho nhỏ nhất thì ta lấy vị trí đó
@@ -200,7 +200,7 @@ if __name__ == '__main__':
 ```python
 - Phương pháp dựa vào window
 Tương tự phương pháp trên, thay vì tính 1 điểm thì tôi tính từng cửa sổ có kích thước 3x3 chẳng hạn. Phương pháp này sẽ xử lí tốt hơn phương pháp trên khi ảnh có nhiễu.
-![img1](https://github.com/NguyenDinhTiem/Linear_Algebra_and_Applications/edit/main/stereo3.png)
+![img1](https://github.com/NguyenDinhTiem/Linear_Algebra_and_Applications/blob/main/stereo3.png)
 
 ```
 
