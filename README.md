@@ -307,3 +307,4 @@ stereo_matching_ssd("images/left.png", "images/right.png", kernel_size, disparit
 ```python
 
 ```
+Bài viết dựa trên tài liệu khóa học AI Foundation Course in AI VietNam
