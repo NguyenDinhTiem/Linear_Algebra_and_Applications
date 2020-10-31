@@ -197,18 +197,11 @@ if __name__ == '__main__':
     . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
 
 
-```python
+
 - Phương pháp dựa vào window
 Tương tự phương pháp trên, thay vì tính 1 điểm thì tôi tính từng cửa sổ có kích thước 3x3 chẳng hạn. Phương pháp này sẽ xử lí tốt hơn phương pháp trên khi ảnh có nhiễu.
 ![img1](https://github.com/NguyenDinhTiem/Linear_Algebra_and_Applications/blob/main/stereo3.png)
 
-```
-
-
-      File "<ipython-input-11-733f65fa17ac>", line 1
-        - Phương pháp dựa vào window
-                 ^
-    SyntaxError: invalid syntax
     
 
 
