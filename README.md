@@ -1,4 +1,5 @@
 # **Linear Algebra and Applications**
+#### Author: Nguyễn Đình Tiềm
 # INTRODUCTION
   Tại sao một bức ảnh có thể xoay các chiều khác nhau được? 
   Làm thế nào để có thể tìm được các cạnh, biên trong một bức ảnh?
