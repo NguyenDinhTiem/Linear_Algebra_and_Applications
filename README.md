@@ -125,10 +125,15 @@ Stereo matching là một lĩnh vực nghiên cứu trong computer vision, nhằ
 - Phương pháp dựa vào pixel
 ![img1.png](https://github.com/NguyenDinhTiem/Linear_Algebra_and_Applications/blob/main/stereo2.png)
 Theo ý hiểu của mình thì phương pháp này như sau:
-Bước 1: Chọn 1 điểm trên ảnh trái L giả sử là A(23, 10) giá trị điểm này là 100, giờ bên ảnh phải mình cũng lấy 1 điểm B(23,10) giá trị điểm này là 110. Mặc dù 2 điểm cùng tọa độ, nhưng giá trị lại khác nhau, vì sao lại như vậy? Là do 2 hình nhìn như gống nhau nhưng do nhiều yếu tố như góc chụp, độ sáng.. nên có sự chênh lệch giá trị màu như vậy. Giả sử người ta tính toán và nói rằng mình cần dịch chuyển điểm B về bên trái khoảng (0-15 ô hay giá trị toạn độ theo x) thì sẽ tìm được đúng điểm đúng với điểm A ở bên trái. 
-Bước 2: Tiếp theo mình mình dịch chuyển xB sang trái từ 1->15 đơn vị, mỗi lần dịch chuyển ta được 1 vị trí xB mới, mỗi xB có 1 giá trị màu khác nhau. Sau đó ta tính độ lệch tại 15 giá trị đó bằng cách lấy giá trị màu tại A - đi giá trị tại từng điểm vị trí xB lấy bình phương. Ta lấy arg min độ lệch của 15 vị trí ta tính bên trên, nếu vị trí nào mà có giá trị làm cho nhỏ nhất thì ta lấy vị trí đó
-Bước 3: Sau bước trên mình thu được toạn độ xB mới có giá trị B(20,10) có giá trị 110 = A, chiều xâu sẽ xác định bằng xA- XB mới = 23-20=3, áp dụng tương tự cho các điểm ảnh còn lại.
-Note: Nếu các điểm ảnh có trong B mà không có trong A thì không cần xét điểm ảnh đó nữa  
+
+>>Bước 1: Chọn 1 điểm trên ảnh trái L giả sử là A(23, 10) giá trị điểm này là 100, giờ bên ảnh phải mình cũng lấy 1 điểm B(23,10) giá trị điểm này là 110. Mặc dù 2 điểm cùng tọa độ, nhưng giá trị lại khác nhau, vì sao lại như vậy? Là do 2 hình nhìn như gống nhau nhưng do nhiều yếu tố như góc chụp, độ sáng.. nên có sự chênh lệch giá trị màu như vậy. Giả sử người ta tính toán và nói rằng mình cần dịch chuyển điểm B về bên trái khoảng (0-15 ô hay giá trị toạn độ theo x) thì sẽ tìm được đúng điểm đúng với điểm A ở bên trái.
+
+
+> >Bước 2: Tiếp theo mình mình dịch chuyển xB sang trái từ 1->15 đơn vị, mỗi lần dịch chuyển ta được 1 vị trí xB mới, mỗi xB có 1 giá trị màu khác nhau. Sau đó ta tính độ lệch tại 15 giá trị đó bằng cách lấy giá trị màu tại A - đi giá trị tại từng điểm vị trí xB lấy bình phương. Ta lấy arg min độ lệch của 15 vị trí ta tính bên trên, nếu vị trí nào mà có giá trị làm cho nhỏ nhất thì ta lấy vị trí đó
+
+>> Bước 3: Sau bước trên mình thu được toạn độ xB mới có giá trị B(20,10) có giá trị 110 = A, chiều xâu sẽ xác định bằng xA- XB mới = 23-20=3, áp dụng tương tự cho các điểm ảnh còn lại.
+
+>>Note: Nếu các điểm ảnh có trong B mà không có trong A thì không cần xét điểm ảnh đó nữa  
 
 
 
