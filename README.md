@@ -111,7 +111,7 @@ cv2.imwrite('resize_bilinear.png',resize_bilinear)
  
 # 4. Cosine Similarity
 - Cosine similarity (cs) được dùng để đo mức độ giống nhau/tương đồng giữa hai vector, nó được sử dụng trong nhiều bài toán gợi ý.........
-[!img1](https://github.com/NguyenDinhTiem/Linear_Algebra_and_Applications/blob/main/cosin.png)
+![img1](https://github.com/NguyenDinhTiem/Linear_Algebra_and_Applications/blob/main/cosin.png)
 - Stereo matching
 Stereo matching là một lĩnh vực nghiên cứu trong computer vision, nhằm tính khoảng cách từ camera đến các object. Stereo matching dùng hệ thống gồm 2 camera (gọi là stereo camera) để bắt trước cặp mắt của con người trong việc tính khoảng cách.
 
