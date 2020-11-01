@@ -15,7 +15,7 @@ Mình sẽ trình bày về 5 phần sau:
 5. Integral
 
 # 1. Derivative/Gradient
-  - Đạo hàm? Chắc bạn đang nghĩ về thời cấp 3, năm 1, 2 đại học, thứ mà làm bạn tốn rất nhiều giấy và mực, giờ có khi như một bóng mờ trong bạn, khá là mơ hồ :)). Nhưng ở đây mình không nói về các bài toán đạo hàm siêu to dắc dối mà bạn từng học, mà là một ứng dụng nhỏ rất thú vị của đạo hàm, đó là tìm cạnh của bức ảnh.
+  - Đạo hàm? Chắc bạn đang nghĩ về thời cấp 3, năm 1, 2 đại học, thứ mà làm bạn tốn rất nhiều giấy và mực, giờ có khi như một bóng mờ trong bạn, khá là mơ hồ :)). Nhưng ở đây mình không nói về các bài toán đạo hàm siêu to rắc rối mà bạn từng học, mà là một ứng dụng nhỏ rất thú vị của đạo hàm, đó là tìm cạnh của bức ảnh.
   ![img1.png](https://github.com/NguyenDinhTiem/Linear_Algebra_and_Applications/blob/main/daoham1.png)
   - Có thể hiểu đạo hàm tại một điểm là tiếp tuyến tại điểm đó, Áp dụng cho hàm rời rạc ta có công thức sau:
 ![img1.png](https://github.com/NguyenDinhTiem/Linear_Algebra_and_Applications/blob/main/hamroirac.png)
